@@ -11,7 +11,7 @@ df=pd.DataFrame(heart_data)
 Y = heart_data['target']
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, stratify=Y, random_state=2)
 st.title("Heart disease prediction system")
-st.line_chart(df)
+st.line_chart(heart_data)
 st.sidebar.title("Enter input values ")
 form = st.sidebar.form(key='my_form')
 age=form.number_input(label="Age")
