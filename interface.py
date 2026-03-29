@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 import warnings
 warnings.filterwarnings('ignore')
-heart_data = pd.read_csv(r"E://Heartdisease.csv")
+heart_data = pd.read_csv("Heartdisease.csv")
 X = heart_data.drop(columns='target', axis=1)
 df=pd.DataFrame(heart_data)
 Y = heart_data['target']
